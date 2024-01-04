@@ -89,17 +89,22 @@ t4g micro<br>
 
 ## 결과 분석
 
-### 1. t_ 차이
-- T2 인스턴스가 가장 빠른 시간을 기록한 것은, 이 인스턴스가 필요에 따라 CPU 사용량을 순간적으로 확장할 수 있기 때문<br>
+### 아키텍처 차이
 
-- T3a 인스턴스가 두 번째로 빠른 시간을 기록한 것은, 이 인스턴스가 AMD EPYC 7000 시리즈 프로세서를 사용하며, T3 인스턴스보다 10%의 비용을 절감하면서도 높은 성능을 제공하기 때문<br>
+<img src="./failx.png" width="400" height="80"/>
+<img src="./failarm.png" width="400" height="80"/>
 
-- T3와 T4g 인스턴스가 비슷한 시간을 기록한 것은, 두 인스턴스 유형이 모두 높은 CPU 성능을 제공하기 때문<br>
+T3 인스턴스는 인텔 x86아키텍처, t3a 인스턴스는 AMD x86 아키텍처, T4g 인스턴스는 AWS Graviton의 프로세서로
+아키텍처를 x86으로 설정했을 땐 t4g를 사용할 수 없고, arm으로 설정하면 t2,t3,t3a를 사용할 수 없었다
 
-### 2. small과 micro 차이
+- micro<br>
+<img src="./t3micro.png" width="400" height="80"/>
+<img src="./t4gmicro.png" width="400" height="80"/>
 
-<img src="./2.png" width="400" height="50"/>
+- small<br>
+<img src="./t3asmall.png" width="400" height="80"/>
+<img src="./t4gsmall.png" width="400" height="80"/>
 
-small이 micro보다 메모리(GiB)가 2배이기때문에 small이 더 빠르다
-
+small의 vPCU는 2, 메모리는 2GiB로 , micro의 vCPU는 2, 메모리는 1GiB로 버전별로 동일하다
+하지만 x86에서 t2,t3,t3a 인스턴스 코드 실행 시간이 arm에서 t4g 인스턴스 코드 실행 시간보다 빠른 것을 알 수 있다
 
