@@ -2,6 +2,7 @@
 
 ## 실행 코드
 
+```python
 import requests
 from bs4 import BeautifulSoup
 
@@ -13,53 +14,41 @@ def get_username_and_email(url):
     username = soup.find('h1').text
 
     # 이메일 주소가 포함된 HTML 요소를 찾습니다.
-    email_tag = soup.find('a', href=lambda x: x and x.startswith('mailto:'))    if email_tag:
+    email_tag = soup.find('a', href=lambda x: x and x.startswith('mailto:'))    
+    if email_tag:
         email = email_tag['href'].replace('mailto:', '')
     else:
         email = '이메일 주소를 찾을 수 없습니다.'
 
     return username, email
 
+def execute_and_print(url):
+    username, email = get_username_and_email(url)
+    print(f'Username: {username}')
+    print(f'Email: {email}')
+    print ('\n')
 
-url = 'https://baebyeolha.github.io/baebyeolha/'
-username, email = get_username_and_email(url)
-print(f'Username: {username}')
-print(f'Email: {email}')
-print ('\n')
+def calculate_execution_time():
+    import math
+    import time
 
-url1 = 'https://eunxoo.github.io/eunxoo/'
-username1, email1 = get_username_and_email(url1)
-print(f'Username: {username1}')
-print(f'Email: {email1}')
-print ('\n')
+    start = time.time()
+    math.factorial(100000)
+    end = time.time()
 
-url2 = 'https://seo-yj.github.io/SEO-YJ/'
-username2, email2 = get_username_and_email(url2)
-print(f'Username: {username2}')
-print(f'Email: {email2}')
-print ('\n')
+    print(f"{end - start:.5f} sec")
 
-
-url3 = 'https://tomk2d.github.io/Tomk2d/'
-username3, email3 = get_username_and_email(url3)
-print(f'Username: {username3}')
-print(f'Email: {email3}')
-
-
-
-import math
-import time
-
-start = time.time()
-math.factorial(100000)
-end = time.time()
-
-print(f"{end - start:.5f} sec")
+# 실행 코드
+execute_and_print('https://baebyeolha.github.io/baebyeolha/')
+execute_and_print('https://eunxoo.github.io/eunxoo/')
+execute_and_print('https://seo-yj.github.io/SEO-YJ/')
+execute_and_print('https://tomk2d.github.io/Tomk2d/')
+calculate_execution_time()
 
 
 ## 결과
 
-<img src1="./1.png" width="400" height="400"/>
+<img src="./1.png" width="400" height="400"/>
 
 ## 결과 분석
 
