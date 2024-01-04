@@ -61,21 +61,29 @@
 
 t2 small<br>
 <img src="./img/t2small.png" width="400" height="300"/>
+<br>
 t3 small<br>
 <img src="./img/t3small.png" width="400" height="300"/>
+<br>
 t3a small<br>
 <img src="./img/t3asmall.png" width="400" height="300"/>
+<br>
 t4g small<br>
 <img src="./img/t4gsmall.png" width="400" height="300"/>
+<br>
 
 t2 micro<br>
 <img src="./img/t2micro.png" width="400" height="300"/>
+<br>
 t3 micro<br>
 <img src="./img/t3micro.png" width="400" height="300"/>
+<br>
 t3a micro<br>
 <img src="./img/t3amicro.png" width="400" height="300"/>
+<br>
 t4g micro<br>
 <img src="./img/t4gmicro.png" width="400" height="300"/>
+
 
 <img src="./1.png" width="200" height="400"/>
 
