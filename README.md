@@ -2,59 +2,59 @@
 
 ## 실행 코드
 
-import requests
-from bs4 import BeautifulSoup
+    import requests
+    from bs4 import BeautifulSoup
 
-def get_username_and_email(url):
-    response = requests.get(url)
-    soup = BeautifulSoup(response.text, 'html.parser')
+    def get_username_and_email(url):
+        response = requests.get(url)
+        soup = BeautifulSoup(response.text, 'html.parser')
 
-    # 사용자 이름이 포함된 HTML 요소를 찾습니다.
-    username = soup.find('h1').text
+        # 사용자 이름이 포함된 HTML 요소를 찾습니다.
+        username = soup.find('h1').text
 
-    # 이메일 주소가 포함된 HTML 요소를 찾습니다.
-    email_tag = soup.find('a', href=lambda x: x and x.startswith('mailto:'))    if email_tag:
-        email = email_tag['href'].replace('mailto:', '')
-    else:
-        email = '이메일 주소를 찾을 수 없습니다.'
+        # 이메일 주소가 포함된 HTML 요소를 찾습니다.
+        email_tag = soup.find('a', href=lambda x: x and x.startswith('mailto:'))    if email_tag:
+            email = email_tag['href'].replace('mailto:', '')
+        else:
+            email = '이메일 주소를 찾을 수 없습니다.'
 
     return username, email
 
 
-url = 'https://baebyeolha.github.io/baebyeolha/'
-username, email = get_username_and_email(url)
-print(f'Username: {username}')
-print(f'Email: {email}')
-print ('\n')
+    url = 'https://baebyeolha.github.io/baebyeolha/'
+    username, email = get_username_and_email(url)
+    print(f'Username: {username}')
+    print(f'Email: {email}')
+    print ('\n')
 
-url1 = 'https://eunxoo.github.io/eunxoo/'
-username1, email1 = get_username_and_email(url1)
-print(f'Username: {username1}')
-print(f'Email: {email1}')
-print ('\n')
+    url1 = 'https://eunxoo.github.io/eunxoo/'
+    username1, email1 = get_username_and_email(url1)
+    print(f'Username: {username1}')
+    print(f'Email: {email1}')
+    print ('\n')
 
-url2 = 'https://seo-yj.github.io/SEO-YJ/'
-username2, email2 = get_username_and_email(url2)
-print(f'Username: {username2}')
-print(f'Email: {email2}')
-print ('\n')
-
-
-url3 = 'https://tomk2d.github.io/Tomk2d/'
-username3, email3 = get_username_and_email(url3)
-print(f'Username: {username3}')
-print(f'Email: {email3}')
+    url2 = 'https://seo-yj.github.io/SEO-YJ/'
+    username2, email2 = get_username_and_email(url2)
+    print(f'Username: {username2}')
+    print(f'Email: {email2}')
+    print ('\n')
 
 
+    url3 = 'https://tomk2d.github.io/Tomk2d/'
+    username3, email3 = get_username_and_email(url3)
+    print(f'Username: {username3}')
+    print(f'Email: {email3}')
 
-import math
-import time
 
-start = time.time()
-math.factorial(100000)
-end = time.time()
 
-print(f"{end - start:.5f} sec")
+    import math
+    import time
+
+    start = time.time()
+    math.factorial(100000)
+    end = time.time()
+
+    print(f"{end - start:.5f} sec")
 
 
 ## 결과
