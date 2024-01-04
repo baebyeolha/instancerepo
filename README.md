@@ -105,6 +105,6 @@ T3 인스턴스는 인텔 x86아키텍처, t3a 인스턴스는 AMD x86 아키텍
 <img src="./t3small.png" width="400" height="50"/>
 <img src="./t4gsmall.png" width="400" height="50"/>
 
-small의 vPCU는 2, 메모리는 2GiB로 , micro의 vCPU는 2, 메모리는 1GiB로 버전별로 동일하다 <br>
+small의 vCPU는 2, 메모리는 2GiB로 , micro의 vCPU는 2, 메모리는 1GiB로 버전별로 동일하다 <br>
 하지만 x86에서 t2,t3,t3a 인스턴스 코드 실행 시간이 arm에서 t4g 인스턴스 코드 실행 시간보다 빠른 것을 알 수 있다
 
