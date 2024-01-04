@@ -108,5 +108,17 @@ T3 인스턴스는 인텔 x86아키텍처, t3a 인스턴스는 AMD x86 아키텍
 <img src="./t4gsmall.png" width="400" height="50"/>
 
 small의 vCPU는 2, 메모리는 2GiB로 , micro의 vCPU는 2, 메모리는 1GiB로 버전별로 동일하다 <br>
-하지만 x86에서 t2,t3,t3a 인스턴스 코드 실행 시간이 arm에서 t4g 인스턴스 코드 실행 시간보다 빠른 것을 알 수 있다
+하지만 x86에서 t2,t3,t3a 인스턴스 코드 실행 시간이 arm에서 t4g 인스턴스 코드 실행 시간보다 빠른 것을 알 수 있다<br>
+
+
+### 인스턴스 차이
+
+<img src="./img/t3smallt.png" width="400" height="300"/>
+<img src="./img/t3nano.png" width="400" height="300"/>
+
+- 위의 표를 보면 micro와 small의 차이는 별로 없었다
+- 오늘 small과 nano를 비교해보니 nano가 small보다 느린 것을 알 수 있다
+- nano와 small의 vCPU는 동일하지만 메모리가 4배 작아 속도 차이가 나는 것 같다
+
+
 
