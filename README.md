@@ -59,23 +59,23 @@
 
 ## 결과
 
-t2 small
+t2 small<br>
 <img src="./img/t2small.png" width="400" height="300"/>
-t3 small
+t3 small<br>
 <img src="./img/t3small.png" width="400" height="300"/>
-t3a small
+t3a small<br>
 <img src="./img/t3asmall.png" width="400" height="300"/>
-t4g small
-<img src="./img/t4small.png" width="400" height="300"/>
+t4g small<br>
+<img src="./img/t4gsmall.png" width="400" height="300"/>
 
-t2 micro
+t2 micro<br>
 <img src="./img/t2micro.png" width="400" height="300"/>
-t3 micro
+t3 micro<br>
 <img src="./img/t3micro.png" width="400" height="300"/>
-t3a micro
+t3a micro<br>
 <img src="./img/t3amicro.png" width="400" height="300"/>
-t4g micro
-<img src="./img/t4micro.png" width="400" height="300"/>
+t4g micro<br>
+<img src="./img/t4gmicro.png" width="400" height="300"/>
 
 <img src="./1.png" width="200" height="400"/>
 
