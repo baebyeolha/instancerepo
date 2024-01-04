@@ -59,7 +59,7 @@ print(f"{end - start:.5f} sec")
 
 ## 결과
 
-<img src="./1.png" width="400" height="400"/>
+<img src1="./1.png" width="400" height="400"/>
 
 ## 결과 분석
 
