@@ -91,19 +91,19 @@ t4g micro<br>
 
 ### 아키텍처 차이
 
-<img src="./failx.png" width="400" height="80"/>
-<img src="./failarm.png" width="400" height="80"/>
+<img src="./failx.png" width="400" height="50"/>
+<img src="./failarm.png" width="400" height="50"/>
 
 T3 인스턴스는 인텔 x86아키텍처, t3a 인스턴스는 AMD x86 아키텍처, T4g 인스턴스는 AWS Graviton의 프로세서로
 아키텍처를 x86으로 설정했을 땐 t4g를 사용할 수 없고, arm으로 설정하면 t2,t3,t3a를 사용할 수 없었다
 
 - micro<br>
-<img src="./t3micro.png" width="400" height="80"/>
-<img src="./t4gmicro.png" width="400" height="80"/>
+<img src="./t3micro.png" width="400" height="50"/>
+<img src="./t4gmicro.png" width="400" height="50"/>
 
 - small<br>
-<img src="./t3asmall.png" width="400" height="80"/>
-<img src="./t4gsmall.png" width="400" height="80"/>
+<img src="./t3small.png" width="400" height="50"/>
+<img src="./t4gsmall.png" width="400" height="50"/>
 
 small의 vPCU는 2, 메모리는 2GiB로 , micro의 vCPU는 2, 메모리는 1GiB로 버전별로 동일하다
 하지만 x86에서 t2,t3,t3a 인스턴스 코드 실행 시간이 arm에서 t4g 인스턴스 코드 실행 시간보다 빠른 것을 알 수 있다
