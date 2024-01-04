@@ -59,6 +59,24 @@
 
 ## 결과
 
+t2 small
+<img src="./img/t2small.png" width="400" height="300"/>
+t3 small
+<img src="./img/t3small.png" width="400" height="300"/>
+t3a small
+<img src="./img/t3asmall.png" width="400" height="300"/>
+t4g small
+<img src="./img/t4small.png" width="400" height="300"/>
+
+t2 micro
+<img src="./img/t2micro.png" width="400" height="300"/>
+t3 micro
+<img src="./img/t3micro.png" width="400" height="300"/>
+t3a micro
+<img src="./img/t3amicro.png" width="400" height="300"/>
+t4g micro
+<img src="./img/t4micro.png" width="400" height="300"/>
+
 <img src="./1.png" width="200" height="400"/>
 
 ## 결과 분석
