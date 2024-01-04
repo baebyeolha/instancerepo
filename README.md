@@ -113,8 +113,8 @@ small의 vCPU는 2, 메모리는 2GiB로 , micro의 vCPU는 2, 메모리는 1GiB
 
 ### 인스턴스 차이
 
-<img src="./img/t3smallt.png" width="400" height="300"/>
-<img src="./img/t3nano.png" width="400" height="300"/>
+<img src="./t3smallt.png" width="400" height="300"/>
+<img src="./t3nano.png" width="400" height="300"/>
 
 - 위의 표를 보면 micro와 small의 차이는 별로 없었다
 - 오늘 small과 nano를 비교해보니 nano가 small보다 느린 것을 알 수 있다
