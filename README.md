@@ -59,7 +59,7 @@ print(f"{end - start:.5f} sec")
 
 ## 결과
 
-<img src1="./1.png" width="400" height="400"/>
+<img src="./1.png" width="200" height="400"/>
 
 ## 결과 분석
 
@@ -72,7 +72,7 @@ print(f"{end - start:.5f} sec")
 
 2. small과 micro 차이
 
-<img src="./2.png" width="400" height="400"/>
+<img src="./2.png" width="400" height="50"/>
 
 small이 micro보다 메모리(GiB)가 2배이기때문에 small이 더 빠르다
 
