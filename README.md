@@ -91,6 +91,8 @@ t4g micro<br>
 
 ### 아키텍처 차이
 
+처음에는 인스턴스로 실행속도를 비교하려 했으나 변경되지 않는 인스턴스가 있어 왜 그런지 생각해보았다<br>
+
 <img src="./failx.png" width="400" height="50"/>
 <img src="./failarm.png" width="400" height="50"/>
 
